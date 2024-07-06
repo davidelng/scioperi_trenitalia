@@ -40,7 +40,7 @@ function getNewsFromHTML(htmlBody) {
 	let anchors = dom.window.document.querySelectorAll('a');
 	for (let anchor of anchors) {
 		if (anchor.classList.contains('headingNewsAccordion')) {
-			news.push(anchor.textContent);
+			news.push(anchor.textContent.trim());
 		}
 	}
 	return news
