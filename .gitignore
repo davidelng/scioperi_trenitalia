@@ -1,0 +1,6 @@
+node_modules/
+.env
+data/*
+!data/example.csv
+logs/*
+!logs/example.log
