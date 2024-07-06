@@ -1,5 +1,5 @@
-import { JSDOM } from 'jsdom';
 import { logger } from './logger.js';
+import { JSDOM } from 'jsdom';
 
 async function findStrikes(baseURL) {
 	logger.info(`Searching for strikes on: ${baseURL}`);

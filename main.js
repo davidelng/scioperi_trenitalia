@@ -1,5 +1,5 @@
-import { findStrikes } from './crawl.js';
-import { sendAlert } from './alert.js';
+import { findStrikes } from './src/crawl.js';
+import { sendAlert } from './src/alert.js';
 
 async function main() {
     const baseURL = 'https://www.trenitalia.com/it/informazioni/Infomobilita/notizie-infomobilita.html';
