@@ -1,4 +1,4 @@
-# Trenitalia news crawler
+# Trenitalia strikes crawler
 
 Since I'm sick and tired of losing trains in this country because they get canceled at the last minute due to strikes or malfunctions, I made a script that crawls the national rail service info page and send a message to my Telegram.
 
@@ -6,6 +6,6 @@ Their app won't even send a push notification and the only message you'll get it
 
 Also, they have some APIs, but are literally unusable.
 
-This script (based on [this web crawler](https://github.com/davidelng/webcrawler)) is meant to be used as a cronjob but can be converted into a serverless lambda.
+This script (based on [this web crawler](https://github.com/davidelng/webcrawler_js)) is meant to be used as a cronjob but can be converted into a serverless lambda.
 
 The script logs its operations into log files and saves data into csv files, that are read on each execution to prevent sending the same information several times. Also, it helps me track how many strikes there are so I can ask for a refund.
